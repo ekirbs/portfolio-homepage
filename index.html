@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0", shrink-to-fit="no">
     <meta name="description" content="This website give useful tips for search engine optimization."/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <title>Ekirbs Portfolio</title>
@@ -28,7 +29,7 @@
                     <a href="#GitHub">My GitHub</a>
                 </li>
                 <li>
-                    <a href="#other-section">Other Section</a>
+                    <a href="#my-resume">Other Section</a>
                 </li>
                 <li>
                     <a href="#ContactForm">Contact Me</a>
@@ -38,10 +39,10 @@
 
     </header>
 
-    <figure id="background-image" class="background-image" alt="Tree-lined Road."></figure>
+    <figure></figure>
 
     <main>
-        
+
         <section id="AboutMe" class="main-section">
             <img src="./assets/images/thinking-robot.jpg" class="float-left" alt="Thinking robot." />
             <h2>About Me</h2>
@@ -64,9 +65,9 @@
             <a href="https://github.com/ekirbs">My GitHub Page</a>
         </section>
 
-        <section id="other-section" class="main-section">
+        <section id="my-resume" class="main-section">
             <img src="./assets/images/fireworks-sky.jpg" class="float-left" alt="Fireworks in the night sky." />
-            <h2>Other Section</h2>
+            <h2>Resume</h2>
             <p>
                 This is my other section.  It is ever-growing, ever-changing, and ever-improved, just like the field of web design and coding!  Take a look around and see some 
                 of the projects I've completed or that I'm working on.  Some of them are simple, some more complex, but I'm proud of it all, even if it's just because I can look 
@@ -83,12 +84,19 @@
                 Just leave your name, email address, and a brief description of what you want to talk about and I'll get in touch with you!
             </p>
             <form>
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname" placeholder="Enter First Name Here">
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname" placeholder="Enter Last Name Here"><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter Email Address Here">
+                <h3>Contact Me: </h3>
+                <p>
+                    <label for="name">First & Last name: </label>
+                    <input type="text" id="name" name="name" placeholder="Name Here.">
+                </p>
+                <p>
+                    <label for="email">Email Address: </label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email Address Here">
+                </p>
+                <p>
+                    <label for="comment">Comments: </label>
+                    <input type="text-input" id="comment" name="comment" placeholder="Tell em what you're thinking.">
+                </p>
                 <button type="button" id ="send-button" class="btn btn-primary" onclick="do_send()">Send</button>
             </form>
         </section>
@@ -99,7 +107,7 @@
 
         <section class="benefits-section">
             <h3>Strong Teamwork Skills</h3>
-            <img src="./assets/images/working-together.png" alt="Lead Generation." />
+            <img src="./assets/images/working-together.png" alt="Efficiency is money." />
             <p>
                 Teamwork is everything in this field.  The whole team of developers need to work together at all times to produce the best result, but it's also important to see management and clients 
                 as teammates as well! We are all valuable cogs in the machine, and I love not only doing my job as best as possible, but helping those around me achieve greatness as well. If we all do 
