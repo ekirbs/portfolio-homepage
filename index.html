@@ -19,17 +19,21 @@
     <header>
 
         <h1><span class="E">E</span>ric <span class="K">K</span>irberger</h1>
+        <a href="mailto:name@email.com">Link text</a>
         
         <nav>
             <ul>
                 <li>
-                    <a href="#AboutMe">About Me</a>
+                    <a href="#about-me">About Me</a>
                 </li>
                 <li>
-                    <a href="#GitHub">My GitHub</a>
+                    <a href="#github">My GitHub</a>
                 </li>
                 <li>
-                    <a href="#my-resume">Other Section</a>
+                    <a href="#my-resume">My Resume</a>
+                </li>
+                <li>
+                    <a href="#portfolio">My Portfolio</a>
                 </li>
                 <li>
                     <a href="#ContactForm">Contact Me</a>
@@ -43,8 +47,8 @@
 
     <main>
 
-        <section id="AboutMe" class="main-section">
-            <img src="./assets/images/thinking-robot.jpg" class="float-left" alt="Thinking robot." />
+        <section id="about-me" class="main-section">
+            <img src="./assets/images/thinking-robot.jpg" class="float-left grow" alt="Thinking robot." />
             <h2>About Me</h2>
             <p>
                 I am a Renaisssance man.  I have a Bachelor's Degree in Philosphy from Rutgers University.  I spent around 15 years as a fencing master and a teacher. 
@@ -54,8 +58,8 @@
             </p>
         </section>
 
-        <section id="GitHub" class="main-section">
-            <img src="./assets/images/github-logo.jpg" class="float-right" alt="GitHub logo." />
+        <section id="github" class="main-section">
+            <img src="./assets/images/github-logo.jpg" class="float-right grow" alt="GitHub logo." />
             <h2>GitHub</h2>
             <p>
                 This is my GitHub profile.  It is ever-growing, ever-changing, and ever-improved, just like the field of web design and coding!  Take a look around and see some 
@@ -66,44 +70,28 @@
         </section>
 
         <section id="my-resume" class="main-section">
-            <img src="./assets/images/fireworks-sky.jpg" class="float-left" alt="Fireworks in the night sky." />
+            <img src="./assets/images/fireworks-sky.jpg" class="float-left grow" alt="Fireworks in the night sky." />
             <h2>Resume</h2>
             <p>
                 This is my other section.  It is ever-growing, ever-changing, and ever-improved, just like the field of web design and coding!  Take a look around and see some 
                 of the projects I've completed or that I'm working on.  Some of them are simple, some more complex, but I'm proud of it all, even if it's just because I can look 
                 back and see how far I've come!
             </p>
-            <a href="https://github.com/ekirbs">My GitHub Page</a>
+            <a href=#>My Resume</a>
         </section>
 
-        <section id="ContactForm" class="main-section">
-            <img src="./assets/images/fireworks-road.jpg" class="float-right" alt="Fireworks over a road." />
-            <h2>Contact Form</h2>
+        <section id="portfolio" class="main-section">
+            <img src="./assets/images/fireworks-road.jpg" class="float-right grow" alt="Fireworks over a road." />
+            <h2>Portfolio</h2>
             <p>
-                If you are interested in working with me, if you are interested in hiring me, or if you are just interested in me and want to talk about something, feel free to contact me! 
-                Just leave your name, email address, and a brief description of what you want to talk about and I'll get in touch with you!
+                This is a small sample of some of the work I've done.  This is the forward-facing user experience.  Click on any image to go to the website.
             </p>
-            <form>
-                <h3>Contact Me: </h3>
-                <p>
-                    <label for="name">First & Last name: </label>
-                    <input type="text" id="name" name="name" placeholder="Name Here.">
-                </p>
-                <p>
-                    <label for="email">Email Address: </label>
-                    <input type="email" id="email" name="email" placeholder="Enter Email Address Here">
-                </p>
-                <p>
-                    <label for="comment">Comments: </label>
-                    <input type="text-input" id="comment" name="comment" placeholder="Tell em what you're thinking.">
-                </p>
-                <button type="button" id ="send-button" class="btn btn-primary" onclick="do_send()">Send</button>
-            </form>
+            <a href="mailto:name@email.com">Link text</a>
         </section>
 
     </main>
 
-    <aside>
+    <aside class="aside-benefit">
 
         <section class="benefits-section">
             <h3>Strong Teamwork Skills</h3>
@@ -132,6 +120,36 @@
                 efficiently as possible. The bottom line is, my time is money...in your pocket!
             </p>
         </section>
+
+    </aside>
+
+    <aside class="aside-contact">
+
+        <section id="ContactForm" class="contact-section">
+            <img src="./assets/images/fireworks-road.jpg" class="float-right" alt="Fireworks over a road." />
+            <h2>Contact Form</h2>
+            <p>
+                If you are interested in working with me, if you are interested in hiring me, or if you are just interested in me and want to talk about something, feel free to contact me! 
+                Just leave your name, email address, and a brief description of what you want to talk about and I'll get in touch with you!
+            </p>
+            <form>
+                <h3>Contact Me: </h3>
+                <p>
+                    <label for="name">First/Last name: </label>
+                    <input type="text" id="name" name="name" class="text-input" placeholder="Name Here.">
+                </p>
+                <p>
+                    <label for="email">Email Address: </label>
+                    <input type="email" id="email" name="email" class="text-input" placeholder="address@example.com">
+                </p>
+                <p>
+                    <label for="comment">Comments: </label>
+                    <input type="text-input" id="comment" name="comment" class="text-input" placeholder="Let me know what's up.">
+                </p>
+                <button type="button" id ="send-button" class="btn btn-primary" onclick="do_send()">Send</button>
+            </form>
+        </section>
+
     </aside>
 
     <footer>Made by <span>E</span><span>kirbs</span></footer>
