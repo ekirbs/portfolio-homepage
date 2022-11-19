@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Snippet Cheatsheet</title>
+  <title>Ekirbs Portfolio</title>
   <link rel="stylesheet" href="assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style2.css" />
 </head>
@@ -14,7 +14,7 @@
 
   <header>
     <h1 class="page-title">
-      CSS Snippet Cheatsheet
+      Eric Kirberger's Portfolio
     </h1>
     <p>
       Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to
@@ -22,28 +22,33 @@
     </p>
   </header>
 
-  <main>
-    <section>
-        <div class="card-column">
-            <figure class="card code-card">
-              <h2 class="card-header">Flexbox Row</h2>
-              <div class="card-body">
-                <p>Use these three properties to create a Flexbox row layout.</p>
-              </div>
-              <!-- with the <pre> element, it counts all spaces literally, so proper code indentation cannot be applied in this case -->
-              <pre class="code-block"><code>.row {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }</code></pre>
-            </figure>
-          </div>
+  <figure>
+    <section class="main-row justify-center">
+      <div class="main-card-column">
+          <figure class="card main-code-card">
+            <h2 class="main-card-header">Flexbox Row</h2>
+            <div class="main-card-body">
+              <img src="./assets/images/thinking-robot.jpg" class="main-img" alt="Thinking robot." /> 
+              <p>Use these three properties to create a Flexbox row layout.</p>
+            </div>
+            <!-- with the <pre> element, it counts all spaces literally, so proper code indentation cannot be applied in this case -->
+            <pre class="code-block"><code>.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }</code></pre>
+          </figure>
+      </div>
     </section>
+  </figure>
+
+  <main>
     <section class="row justify-center">
       <div class="card-column">
         <figure class="card code-card">
           <h2 class="card-header">Flexbox Row</h2>
           <div class="card-body">
+            <img src="./assets/images/github-logo.jpg" class="low-img center" alt="GitHub logo." />
             <p>Use these three properties to create a Flexbox row layout.</p>
           </div>
           <!-- with the <pre> element, it counts all spaces literally, so proper code indentation cannot be applied in this case -->
@@ -58,6 +63,7 @@
         <figure class="card code-card">
           <h2 class="card-header">Flexbox Column</h2>
           <div class="card-body">
+            <img src="./assets/images/fireworks-sky.jpg" class="low-img center" alt="Fireworks in the night sky." />
             <p>Use this to create a Flexbox column layout.</p>
           </div>
           <pre class="code-block"><code>.column {
@@ -71,6 +77,7 @@
         <figure class="card code-card">
           <h2 class="card-header">CSS Grid Layout</h2>
           <div class="card-body">
+            <img src="./assets/images/tree-lined-road.jpg" class="low-img center" alt="A tree-lined road." />
             <p>Build a 12-column layout using CSS Grid</p>
           </div>
           <pre class="code-block"><code>.grid {
@@ -84,6 +91,7 @@
         <figure class="card code-card">
           <h2 class="card-header">Linear Gradients</h2>
           <div class="card-body">
+            <img src="./assets/images/fireworks-road.jpg" class="low-img center" alt="Fireworks over a road." />
             <p>This will create a background linear gradient from top to bottom.</p>
           </div>
           <pre class="code-block"><code>.linear-gradient-background {
@@ -98,6 +106,7 @@
         <figure class="card code-card">
           <h2 class="card-header">Box Transition Glow</h2>
           <div class="card-body">
+            <img src="./assets/images/fireworks-road.jpg" class="low-img center" alt="Fireworks over a road." />
             <p>Use transition and box shadows to glow on hover.</p>
           </div>
           <pre class="code-block"><code>.code-card .card-header {
@@ -116,6 +125,7 @@
         <figure class="card code-card">
           <h2 class="card-header">Overlay Card with Title</h2>
           <div class="card-body">
+            <img src="./assets/images/fireworks-road.jpg" class="low-img center" alt="Fireworks over a road." />
             <p>Use position properties and negative margins to raise elements higher than their natural starting point.
             </p>
           </div>

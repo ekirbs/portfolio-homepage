@@ -17,12 +17,18 @@ body {
 
 header {
     padding: 20px;
-    background-color: #34495E;
     color: #ffffff;
-    position: sticky;
+    /* changed sitcky to fixed (changes header so tha img goes to top of screen */
+    position: fixed;
     top: 0px;
     overflow: auto;
     width: 100%;
+
+    /* added linear gradient...makes head disappear */
+    background-image: linear-gradient(
+      rgba(35, 5, 53, 0) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
 }
 
 header h1 {
@@ -108,14 +114,11 @@ main {
 .float-left {
     float: left;
     margin-right: 25px;
-    transition:transform .2s; /* Animation */
 }
 
 .float-right {
     float: right;
     margin-left: 25px;
-    transition:transform .2s; /* Animation */
-
 }
 
 p {
@@ -214,8 +217,10 @@ p {
     box-shadow: 5px 5px 5px;
   }
 
-.float-right,
-.float-left:hover {
+.grow {
+    transition: transform .2s; /* Animation */
+}
+
+.grow:hover {
     transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    ;
 }
