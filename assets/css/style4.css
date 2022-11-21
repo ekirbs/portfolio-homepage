@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+body {
+    background-color: #d9dcd6;
+}
+
+
+/* || HEADER AND MAIN NAVIGATION */
+
+header {
+    padding: 20px;
+    color: #ffffff;
+    /* changed sitcky to fixed (changes header so tha img goes to top of screen */
+    position: fixed;
+    top: 0px;
+    overflow: auto;
+    width: 100%;
+
+    /* added linear gradient...makes head disappear */
+    background-image: linear-gradient(
+      rgba(35, 5, 53, 0) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header h1 .E {
+    color: #e0d20d;
+}
+
+header h1 .K {
+    color: #e0d20d;
+}
+
+header nav {
+    display: flex;
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}

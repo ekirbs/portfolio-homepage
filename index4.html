@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="UTF-8" />    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", shrink-to-fit="no">
+    <meta name="description" content="The Working Portfolio of Eric Kirberger."/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style4.css">
+
+    <title>Ekirbs Portfolio</title>
+
+</head>
+
+<body>
+
+
+  <header>
+
+    <h1 class="page-title"><span class="E">E</span>ric <span class="K">K</span>irberger</h1>
+    <a href="mailto:name@email.com">Link text</a>
+    
+    <nav>
+        <ul>
+            <li>
+                <a href="#about-me">About Me</a>
+            </li>
+            <li>
+                <a href="#github">My GitHub</a>
+            </li>
+            <li>
+                <a href="#my-resume">My Resume</a>
+            </li>
+            <li>
+                <a href="#portfolio">My Portfolio</a>
+            </li>
+            <li>
+                <a href="#ContactForm">Contact Me</a>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+  <figure>
+    <section class="main-row justify-center">
+      <div class="main-card-column">
+          <figure class="card main-code-card">
+            <h2 class="main-card-header">Flexbox Row</h2>
+            <div class="main-card-body">
+              <img src="./assets/images/thinking-robot.jpg" class="main-img" alt="Thinking robot." /> 
+              <p>Use these three properties to create a Flexbox row layout.</p>
+            </div>
+            <!-- with the <pre> element, it counts all spaces literally, so proper code indentation cannot be applied in this case -->
+            <pre class="code-block"><code>.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }</code></pre>
+          </figure>
+      </div>
+    </section>
+  </figure>
+
+  <main>
+    <section class="row justify-center">
+      <div class="card-column">
+        <figure class="card code-card">
+          <h2 class="card-header">Flexbox Row</h2>
+          <div class="card-body">
+            <img src="./assets/images/github-logo.jpg" class="low-img center" alt="GitHub logo." />
+            <p>Use these three properties to create a Flexbox row layout.</p>
+          </div>
+          <!-- with the <pre> element, it counts all spaces literally, so proper code indentation cannot be applied in this case -->
+          <pre class="code-block"><code>.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}</code></pre>
+        </figure>
+      </div>
+      <div class="card-column">
+        <figure class="card code-card">
+          <h2 class="card-header">Flexbox Column</h2>
+          <div class="card-body">
+            <img src="./assets/images/fireworks-sky.jpg" class="low-img center" alt="Fireworks in the night sky." />
+            <p>Use this to create a Flexbox column layout.</p>
+          </div>
+          <pre class="code-block"><code>.column {
+  display: flex;
+  flex-direction: column
+}</code></pre>
+        </figure>
+      </div>
+
+      <div class="card-column">
+        <figure class="card code-card">
+          <h2 class="card-header">CSS Grid Layout</h2>
+          <div class="card-body">
+            <img src="./assets/images/tree-lined-road.jpg" class="low-img center" alt="A tree-lined road." />
+            <p>Build a 12-column layout using CSS Grid</p>
+          </div>
+          <pre class="code-block"><code>.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+}</code></pre>
+        </figure>
+      </div>
+      <div class="card-column">
+        <figure class="card code-card">
+          <h2 class="card-header">Linear Gradients</h2>
+          <div class="card-body">
+            <img src="./assets/images/fireworks-road.jpg" class="low-img center" alt="Fireworks over a road." />
+            <p>This will create a background linear gradient from top to bottom.</p>
+          </div>
+          <pre class="code-block"><code>.linear-gradient-background {
+  background-image: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%
+  );
+}</code></pre>
+        </figure>
+      </div>
+      <div class="card-column">
+        <figure class="card code-card">
+          <h2 class="card-header">Box Transition Glow</h2>
+          <div class="card-body">
+            <img src="./assets/images/fireworks-road.jpg" class="low-img center" alt="Fireworks over a road." />
+            <p>Use transition and box shadows to glow on hover.</p>
+          </div>
+          <pre class="code-block"><code>.code-card .card-header {
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover,
+.code-card:hover .card-header {
+  box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}</code></pre>
+        </figure>
+      </div>
+
+      <div class="card-column">
+        <figure class="card code-card">
+          <h2 class="card-header">Overlay Card with Title</h2>
+          <div class="card-body">
+            <img src="./assets/images/fireworks-road.jpg" class="low-img center" alt="Fireworks over a road." />
+            <p>Use position properties and negative margins to raise elements higher than their natural starting point.
+            </p>
+          </div>
+          <pre class="code-block"><code>.card-header {
+  position: relative;
+  margin-top: -20px;
+}</code></pre>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h3>Made with <span role="img" aria-label="heart">❤️</span> and CSS</h3>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+/* || GENERAL STYLES */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+body {
+    background-color: #d9dcd6;
+}
+
+
+/* || HEADER AND MAIN NAVIGATION */
+
+header {
+    padding: 20px;
+    background-color: #34495E;
+    color: #ffffff;
+    position: sticky;
+    top: 0px;
+    overflow: auto;
+    width: 100%;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header h1 .E {
+    color: #e0d20d;
+}
+
+header h1 .K {
+    color: #e0d20d;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* || BACKGROUND IMAGE */
+
+figure {
+    height: 600px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/tree-lined-road.jpg");    
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+}
+
+
+/* || MAIN CONTENT */
+
+main {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main-section {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    background-color: #3498DB;
+    color: #ffffff;
+}
+
+.main-section a img {
+    max-height: 200px;
+}
+
+.main-section h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.contact-form label {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+p {
+    font-size: 16px;
+}
+
+
+/* || SIDE BAR (RIGHT) */
+
+.aside-benefit {    
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    background-color: #27AE60;
+}
+
+.benefits-section {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefits-section h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefits-section img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+
+/* || CONTACT SECTION (RIGHT) */
+
+.aside-contact { 
+    margin-top: -120px;
+    margin-right: 20px;
+    margin-bottom: 20px;  
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    background-color: #27AE60;
+}
+
+.contact-section {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.contact-section h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-section img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+
+/* || FOOTER */
+
+.footer {
+    padding: 30px;
+    clear: both;
+    text-align: center;
+}
+
+.footer h4 {
+    color: black;
+    font-size: 20px;
+}
+
+/* || RESIZING */
+
+@media screen and (max-width: 1015px) {
+    header nav ul li {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .long-name {
+        display:none;
+    }
+}
+
+
+
+.text-input:hover {
+    box-shadow: 5px 5px 5px;
+  }
+
+.grow {
+    transition: transform .2s; /* Animation */
+}
+
+.grow:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
