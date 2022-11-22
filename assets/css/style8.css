@@ -12,8 +12,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  
+  }  
   
 body {
   background-color: white;
@@ -133,99 +132,72 @@ figure img {
   
   
 /* || MAIN CONTENT */
-  
+
 main {
-  width: 76%;
-  display: inline-block;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-  
-.main-section {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  background-color: var(--dark-background);
-  color: #ffffff;
-  border-radius: 20px;
-}
-  
-.main-section a img {
-  height: 200px;
-  width: 200px;
-}
-  
-.main-section h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-  text-decoration: underline var(--yellow-highlight);
-}
-  
-.contact-form label {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-  
-.float-left {
-  float: left;
-  margin-right: 25px;
+  width: 96%;
+  margin: 20px auto;
 }
 
-.float-right {
-  float: right;
-  margin-right: 25px;
-}
-  
-main p {
-  font-size: 16px;
+.grid-wrapper {
+  display: grid;
 }
 
-.contact-form {
-  margin-top: 20px;
+.justify-center {
+  justify-content: center;
+}
+
+.row {
+  /* display: flex; */
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-count: 2;
+}
+
+.card-column {
+  flex: 1 0 100%;
+  transition: flex-basis 500ms linear;
+}
+
+.code-card {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
 }
 
-.contact-form p label {
-  display: inline;
+.code-card .code-header {
+  position: relative;
 }
 
-.contact-form p input {
-  display: inline;
+figure a img {
+  height: 30vw;
+  width: 30vw;
 }
 
-#send-button {
-  display: inline;
-  height: 50px;
-  width: 75px;
-  margin-top: 25px;
-  background: linear-gradient(red,
-                  orange, yellow);
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          -webkit-background-clip: text;
+main h2 {
+  border-right: 2px 2px;
 }
 
-#comment {
-  height: 75px;
-  width: 200px;
+.card {
+  height: 25vh;
+  width: 25vh;
+  grid-area: main;
 }
 
-.text-input:hover {
-  box-shadow: 5px 5px 5px;
+.card img {
+  height: 20vh;
+  width: 20vh;
 }
-  
-.zoom {
-  transition: transform .2s; /* Animation */
-}
-  
-.zoom:hover {
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-  
+
+.card .main-card {
+  grid-column: span2;
+  grid-row: span2;
+} */
+
   
 /* || VIEWPORT RESIZING */
   
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .long-name {
     display: none;
   }
@@ -245,24 +217,18 @@ main p {
   figure img {
     margin-top:-2px;
   }
+} */
 
-  .main-section a img {
-    float: none;
-    height: 160px;
-    width: 160px;
-    margin: 20px;
-  }
+/* || FRILLS */
 
-  .main-section {
-    width: 90%;
-    margin-left: 12%;
-  }
-
-  .main-section h2 {
-    margin-left: 8%;
-  }
-
-  #contact-me a {
-    display: none;
-  }
+.text-input:hover {
+  box-shadow: 5px 5px 5px;
+}
+  
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+  
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
