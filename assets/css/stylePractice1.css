@@ -155,20 +155,21 @@ header {
     height: 25vh;
     display: flex;
     text-align: flex-start;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .about-me h1 {
+  font-size: 5vh;
+    height: 10vh;
     border-right: 3px solid black;
+    padding-right: 20px;
 }
 
 
 /* || ASIDE */
 
-.aside1 {
-    background: gold;
-    height: 102vh;
-    /* justify-content: flex-start; */
-}
+
 
 
 /* || MAIN BODY CONTENT */
@@ -190,10 +191,17 @@ header {
     display: flex;
     flex-flow: row wrap;    
     flex: 1 1 50%;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
     margin: 1%
+}
+
+.flexbox-container-alt h1 {
+  font-size: 5vh;
+    height: 10vh;
+    border-right: 3px solid black;
+    padding-right: 20px;
 }
 
 .flexbox-item {
@@ -302,11 +310,16 @@ a:hover {
     background: lightgreen;
     height: 12vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
 }
 
 .footer h1 {
+  font-size: 5vh;
+    height: 10vh;
     border-right: 3px solid black;
+    padding-right: 20px;
 }
 
 .footer img {
