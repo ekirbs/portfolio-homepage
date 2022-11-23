@@ -167,6 +167,10 @@ figure img {
   color: var(--dark-highlight);
 }
 
+.name {
+  font-size: 1.25em;
+}
+
 /* || PORTFOLIO SECTION */
 
 .card {

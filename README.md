@@ -45,6 +45,8 @@ Traversy Media YouTube channel:  CSS Grid Layout Crash Course
 
 w3schools.com
 
+developer.mozilla.org
+
 Special Thanks to Sam Lerner for inspiration.
 
 ## License
