@@ -41,7 +41,11 @@ The Contact Section at the bottom has four links you can click on to contact me,
 
 ## Credits
 
-N/A
+Traversy Media YouTube channel:  CSS Grid Layout Crash Course
+
+w3schools.com
+
+Special Thanks to Sam Lerner for inspiration.
 
 ## License
 
