@@ -4,7 +4,7 @@
 
 Welcome!  This is the first version of my portfolio homepage.  It has many functioning links and even one project already.  This will be an evolving project as I incorporate new skills into its development.  Check back often to see how it's grown and improved.
 
-Link: [Eric Kirberger Portfolio](https://github.com/ekirbs/portfolio-homepage/ 'Learn about my qualifications and how to contact me.')
+Portfolio Link: [Eric Kirberger Portfolio](https://ekirbs.github.io/portfolio-homepage/ 'My Portfolio: Learn about my qualifications and how to contact me.')
 
 ## Table of Contents
 - [Installation](#installation)
