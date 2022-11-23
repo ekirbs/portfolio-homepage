@@ -127,10 +127,6 @@ figure img {
   width: 100%;
 }
 
-.rounded-image {
-  border-radius: 20px;
-}
-
 /* || GENERAL MAIN CONTENT */
 
 .wrapper {
@@ -169,6 +165,10 @@ figure img {
 
 .name {
   font-size: 1.25em;
+  background: linear-gradient(red, orange);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 /* || PORTFOLIO SECTION */
@@ -178,6 +178,9 @@ figure img {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.5em;
+  grid-template-areas:
+    "main main alt"
+    "alt alt alt"
 }
 
 .card {
@@ -193,6 +196,12 @@ figure img {
 .card-main {
   grid-area: 1 / 1 / span 1 / span 2;
 }
+
+/* .main > img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+} */
 
 .card-main a img {
   width: 100%;
@@ -264,12 +273,3 @@ a:hover {
       font-size: 20px;
   }
 }
-
-/* grid-template-areas:
-"main main alt"
-"alt alt alt"
-
-.main > img {
-  object-fit: cover;
-  width: 100%
-  max-height: 100%;
