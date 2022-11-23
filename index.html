@@ -1,168 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./assets/css/reset.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
 
-<head>
-    
-    <meta charset="UTF-8" />    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0", shrink-to-fit="no">
-    <meta name="description" content="This website give useful tips for search engine optimization."/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Eric Kirberger || Web Design</title>
+  </head>
 
-    <title>Ekirbs Portfolio</title>
-
-</head>
-
-<body>
-
+  <body>
+    <a id="home"></a>
     <header>
-
-        <h1><span class="E">E</span>ric <span class="K">K</span>irberger</h1>
-        <a href="mailto:name@email.com">Link text</a>
-        
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#github">My GitHub</a>
-                </li>
-                <li>
-                    <a href="#my-resume">My Resume</a>
-                </li>
-                <li>
-                    <a href="#portfolio">My Portfolio</a>
-                </li>
-                <li>
-                    <a href="#ContactForm">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
-
+      <h1>
+        <span class="cap">E</span><span class="period">.</span
+        ><span class="long-name">ric</span><span class="cap"> K</span
+        ><span class="period">.</span><span class="long-name">irberger</span>
+      </h1>
     </header>
 
-    <figure></figure>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <a href="#home">Back to Top</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#about-me">About Me</a>
+          <a href="#sample-work">Sample Work</a>
+          <a href="#contact-me">Contact Me</a>
+        </div>
+      </div>
+    </nav>
 
-    <main>
+    <br />
+    <br />
 
-        <section id="about-me" class="main-section">
-            <img src="./assets/images/thinking-robot.jpg" class="float-left grow" alt="Thinking robot." />
-            <h2>About Me</h2>
-            <p>
-                I am a Renaisssance man.  I have a Bachelor's Degree in Philosphy from Rutgers University.  I spent around 15 years as a fencing master and a teacher. 
-                I thoroughly enjoyed my time educating the next generation, and I have developed a strong understanding of leadership, management, and many strategies 
-                for teaching others complex concepts. But I felt like a square peg who found a way to fit himself seamlessly into a round hole.  I began searching, and 
-                I've now found my place in the world of coding and web design.  I am excited to see where it goes from here.
-            </p>
-        </section>
+    <figure>
+      <img src="./assets/images/sunset-art-background.jpg" alt="Art of sun setting in a valley."/>
+    </figure>
 
-        <section id="github" class="main-section">
-            <img src="./assets/images/github-logo.jpg" class="float-right grow" alt="GitHub logo." />
-            <h2>GitHub</h2>
-            <p>
-                This is my GitHub profile.  It is ever-growing, ever-changing, and ever-improved, just like the field of web design and coding!  Take a look around and see some 
-                of the projects I've completed or that I'm working on.  Some of them are simple, some more complex, but I'm proud of it all, even if it's just because I can look 
-                back and see how far I've come!
-            </p>
-            <a href="https://github.com/ekirbs">My GitHub Page</a>
-        </section>
+    <div class="wrapper">
+      <div class="section-label about-me-header">
+        <h2>About Me</h2>
+      </div>
 
-        <section id="my-resume" class="main-section">
-            <img src="./assets/images/fireworks-sky.jpg" class="float-left grow" alt="Fireworks in the night sky." />
-            <h2>Resume</h2>
-            <p>
-                This is my other section.  It is ever-growing, ever-changing, and ever-improved, just like the field of web design and coding!  Take a look around and see some 
-                of the projects I've completed or that I'm working on.  Some of them are simple, some more complex, but I'm proud of it all, even if it's just because I can look 
-                back and see how far I've come!
-            </p>
-            <a href=#>My Resume</a>
-        </section>
+      <div id="about-me" class="about-me-section">
+        <p>Hello! My name is Eric Kirberger. I am an aspiring computer programmer.
+            I have a Bachelor's Degree in Philosophy form Rutgers University. I am a
+            former fencing master and teacher.</p>
+      </div>
+      <div class="section-label projects-header">
+        <h2>Projects</h2>
+      </div>
 
-        <section id="portfolio" class="main-section">
-            <img src="./assets/images/fireworks-road.jpg" class="float-right grow" alt="Fireworks over a road." />
-            <h2>Portfolio</h2>
-            <p>
-                This is a small sample of some of the work I've done.  This is the forward-facing user experience.  Click on any image to go to the website.
-            </p>
-            <a href="mailto:name@email.com">Link text</a>
-        </section>
+      <div id="sample-work" class="projects-section">
+          <div class="card card-main zoom">
+            <a target="_blank" href="https://ekirbs.github.io/code-refactor/"><img src="./assets/images/horiseon-screenshot.jpg" class="project-image" alt="A screenshot of an informational website."/></a>
+            <div class="img-text">
+              <h3>Project One</h3>
+              <p>Code Refactor</p>
+            </div>
+          </div>
 
-    </main>
+          <div class="card card-alt zoom">
+            <a target="_blank" href="#project-two"><img src="./assets/images/fireworks-road.jpg" class="project-image" alt="Fireworks over a road."/></a>
+            <div class="img-text">
+              <h3>Project Two</h3>
+              <p>Coming Soon!</p>
+            </div>
+          </div>
 
-    <aside class="aside-benefit">
+          <div class="card card-alt zoom">
+            <a target="_blank" href="#project-three"><img src="./assets/images/tree-lined-road.jpg" class="project-image" alt="A tree-lined road."/></a>
+            <div class="img-text">
+              <h3>Project Three</h3>
+              <p>Coming Soon!</p>
+            </div>
+          </div>
 
-        <section class="benefits-section">
-            <h3>Strong Teamwork Skills</h3>
-            <img src="./assets/images/working-together.png" alt="Efficiency is money." />
-            <p>
-                Teamwork is everything in this field.  The whole team of developers need to work together at all times to produce the best result, but it's also important to see management and clients 
-                as teammates as well! We are all valuable cogs in the machine, and I love not only doing my job as best as possible, but helping those around me achieve greatness as well. If we all do 
-                our parts then we will all succeed.
-            </p>
-        </section>
+          <div class="card card-alt zoom">
+            <a target="_blank" href="#project-four"><img src="./assets/images/fireworks-sky.jpg" class="project-image" alt="Fireworks in the night sky."/></a>
+            <div class="img-text">
+              <h3>Project Four</h3>
+              <p>Coming Soon!</p>
+            </div>
+          </div>
 
-        <section class="benefits-section">
-            <h3>Critical Thinking</h3>
-            <img src="./assets/images/bright-mind.png" alt="A man with a bright idea." />
-            <p>
-                I have strong critical thinking skills and I'm good at conveying those ideas to others. In me, you will get original ideas and solutions, and a willingness to listen to others' 
-                ideas and suggestions. The goal is always a great product, and it's the choices you make along the way that determine if you get there easily or not.
-            </p>
-        </section>
+          <div class="card card-alt zoom">
+            <a target="_blank" href="#project-five"><img src="./assets/images/thinking-robot.jpg" class="project-image" alt="Thinking robot."/></a>
+            <div class="img-text">
+              <h3>Project Five</h3>
+              <p>Coming Soon!</p>
+            </div>
+          </div>
+        </div>
 
-        <section class="benefits-section">
-            <h3>Efficient Time Management</h3>
-            <img src="./assets/images/bottom-line.png" alt="Time is money." />
-            <p>
-                I am an effective worker.  I love pouring over lines of code. I love creating. And I love the feeling of a hard-fought success. I will work diligently to get the job done as accurately and 
-                efficiently as possible. The bottom line is, my time is money...in your pocket!
-            </p>
-        </section>
+      <div class="section-label contact-me-header">
+        <h2>Contact Me</h2>
+      </div>
 
-    </aside>
-
-    <aside class="aside-contact">
-
-        <section id="ContactForm" class="contact-section">
-            <img src="./assets/images/fireworks-road.jpg" class="float-right" alt="Fireworks over a road." />
-            <h2>Contact Form</h2>
-            <p>
-                If you are interested in working with me, if you are interested in hiring me, or if you are just interested in me and want to talk about something, feel free to contact me! 
-                Just leave your name, email address, and a brief description of what you want to talk about and I'll get in touch with you!
-            </p>
-            <form>
-                <h3>Contact Me: </h3>
-                <p>
-                    <label for="name">First/Last name: </label>
-                    <input type="text" id="name" name="name" class="text-input" placeholder="Name Here.">
-                </p>
-                <p>
-                    <label for="email">Email Address: </label>
-                    <input type="email" id="email" name="email" class="text-input" placeholder="address@example.com">
-                </p>
-                <p>
-                    <label for="comment">Comments: </label>
-                    <input type="text-input" id="comment" name="comment" class="text-input" placeholder="Let me know what's up.">
-                </p>
-                <button type="button" id ="send-button" class="btn btn-primary" onclick="do_send()">Send</button>
-            </form>
-        </section>
-
-    </aside>
-
-    <footer>
-        
+      <div id="contact-me" class="contact-me-section">
+        <a href="tel:5558675309">Call me at (555) 867-5309</a>
         <a href="mailto:erickirberger@gmail.com">erickirberger@gmail.com</a>
-
-    </footer>
-
-    <script src="assets/javascript/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-</body>
+        <a target="_blank" href="https://github.com/ekirbs"><img src="./assets/images/github-logo.jpg" class="float-left zoom rounded-image" alt="GitHub logo."/></a>
+        <a target="_blank" href="https://www.linkedin.com/in/eric-kirberger-866a853b/"><img src="./assets/images/linkedin-logo.jpg" class="float-left zoom rounded-image" alt="Linkedin logo."/></a>
+    </div>
+  </body>
 </html>

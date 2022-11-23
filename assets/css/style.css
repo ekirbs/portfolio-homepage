@@ -1,226 +1,266 @@
 /* || GENERAL STYLES */
 
-* {
+:root {
+    --dark-background: #42a5f5;
+    --light-background: #90caf9;
+    --dark-highlight: #1e88e5;
+    --yellow-highlight: #ffff00;
+    --sunset-orange: #ff9933;
+  }
+  
+  * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
-body {
-    background-color: #d9dcd6;
-}
-
-
-/* || HEADER AND MAIN NAVIGATION */
-
-header {
+  }
+  
+  body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: white;
+  }
+  
+  /* || HEADER */
+  
+  header {
     padding: 20px;
+    background-color: var(--dark-background);
     color: #ffffff;
-    /* changed sitcky to fixed (changes header so tha img goes to top of screen */
-    position: fixed;
+    position: sticky;
     top: 0px;
     overflow: auto;
     width: 100%;
-
-    /* added linear gradient...makes head disappear */
-    background-image: linear-gradient(
-      rgba(35, 5, 53, 0) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-}
-
-header h1 {
+    z-index: 100;
+  }
+  
+  header h1 {
     display: inline-block;
     font-size: 48px;
-}
-
-header h1 .E {
-    color: #e0d20d;
-}
-
-header h1 .K {
-    color: #e0d20d;
-}
-
-header nav {
-    display: flex;
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-size: 20px;
-}
-
-header nav ul {
-    display: flex;
-    list-style-type: none;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-
-/* || BACKGROUND IMAGE */
-
-figure {
-    height: 1200px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/tree-lined-road.jpg");    
-    background-size: cover;
-    background-position: center;
-    object-fit: contain;
-}
-
-
-/* || MAIN CONTENT */
-
-main {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.main-section {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    background-color: #3498DB;
-    color: #ffffff;
-}
-
-.main-section img {
-    max-height: 200px;
-}
-
-.main-section h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.contact-form label {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
-p {
-    font-size: 16px;
-}
-
-
-/* || SIDE BAR (RIGHT) */
-
-.aside-benefit {    
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    background-color: #27AE60;
-}
-
-.benefits-section {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefits-section h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefits-section img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-
-/* || CONTACT SECTION (RIGHT) */
-
-.aside-contact { 
-    margin-top: -120px;
-    margin-right: 20px;
-    margin-bottom: 20px;  
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    background-color: #27AE60;
-}
-
-.contact-section {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.contact-section h3 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.contact-section img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-
-/* || FOOTER */
-
-.footer {
-    padding: 30px;
-    clear: both;
-    text-align: center;
-}
-
-.footer h2 {
-    font-size: 20px;
-}
-
-/* || RESIZING */
-
-@media screen and (max-width: 992px) {
-    section {
-        background-color: red;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    header nav ul li {
-        flex-direction: column;
-    }
-}
-
-.text-input:hover {
-    box-shadow: 5px 5px 5px;
+    text-decoration: underline var(--yellow-highlight);
+  }
+  
+  header h1 .cap {
+    background: linear-gradient(red, orange, yellow);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  .period {
+    display: none;
   }
 
-.grow {
-    transition: transform .2s; /* Animation */
+  
+  /* || NAVIGATION BAR */
+  
+  .navbar {
+    position: fixed;
+    width: 100%;
+    min-height: 25px;
+    max-height: 50px;
+    background-color: var(--light-background);
+    z-index: 100;
+    border-bottom: 1px solid var(--dark-highlight);
+  }
+  
+  .navbar a {
+    float: right;
+    font-size: 16px;
+    color: var(--dark-highlight);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: var(--dark-highlight);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: var(--dark-highlight);
+    color: var(--light-background);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--light-background);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px var(--dark-highlight);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: var(--dark-highlight);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: var(--dark-highlight);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  
+  /* || BACKGROUND IMAGE */
+  
+  figure img {
+    min-height: 100px;
+    height: auto;
+    width: 100%;
+  }
+  
+  .rounded-image {
+    border-radius: 20px;
+  }
+  
+  /* || GENERAL MAIN CONTENT */
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: 15% 83%;
+    grid-template-rows: 15% 80% 10%;
+    grid-gap: 1em;
+    margin: 1em;
+  }
+  
+  .wrapper > div {
+    background: var(--light-background);
+    padding: 1em;
+    color: #ffffff;
+  }
+  
+  .wrapper > div:nth-child(odd) {
+    background: var(--dark-background);
+  }
+  
+  .section-label {
+    font-size: 2vw;
+    border-right: 6px solid var(--dark-highlight);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    text-decoration: underline var(--yellow-highlight);
+  }
+
+
+  /* || ABOUT ME SECTION */
+  
+  .about-me-section p {
+    color: var(--dark-highlight)
+  }
+  
+  /* || PORTFOLIO SECTION */
+
+  .card {
+    margin: 1%;
+    background-color: #dfdfdf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: flex-end;
 }
 
-.grow:hover {
-    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+   .projects-section {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:.5em;
+  }
+
+  .card-main {
+    grid-area: 1 / 1 / span 1 / span 2;
+  }
+
+  .card-main a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-alt a {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card-alt a img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .img-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--light-background);
+    color: var(--dark-highlight);
+    flex: 1 1 50%;
 }
+
+a:hover {
+    opacity: 75%;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+    
+.zoom:hover {
+    transform: scale(1.05);
+}
+
+    
+  /* || CONTACT SECTION */
+  
+  .contact-me-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .contact-me-section a img {
+    height: 8vh;
+    width: 8vh;
+  }
+  
+
+  /* || VIEWPORT RESIZING */
+  
+  @media screen and (max-width: 768px) {
+    .long-name {
+      display: none;
+    }
+  
+    .period {
+      display: inline;
+    }
+  
+    .dropdown {
+      float: left;
+    }
+
+    /* .section-label h2 {
+      writing-mode: vertical-lr;
+      text-orientation: upright;
+    } */
+  }
