@@ -141,8 +141,8 @@ figure img {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 15% 83%;
-  grid-template-rows: 15% 200% 10%;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 30% 80% 30%;
   grid-gap: 1em;
   margin: 1em;
 }
@@ -214,7 +214,6 @@ figure img {
   margin: 2px;
   min-width: 100%;
   min-height: 100%;
-  object-fit: contain;
   grid-area: 1 / 1 / span 1 / span 2;
 }
 
@@ -226,6 +225,26 @@ figure img {
   min-height: 100%;
   object-fit: contain;
 }
+
+/* .card-alt {
+  width: 0;
+  height: 0;
+  margin: 2px;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: contain;
+} */
+
+/* .card-main a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/* .card-alt a img {
+  max-width: 100%;
+  height: auto;
+} */
 
 .img-text {
   position: absolute;
