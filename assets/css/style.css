@@ -221,6 +221,7 @@ figure img {
   background: var(--light-background);
   color: var(--dark-highlight);
   flex: 1 1 50%;
+  padding: 2px;
 }
 
 a:hover {
