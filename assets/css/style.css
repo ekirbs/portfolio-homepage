@@ -254,8 +254,13 @@ a:hover {
     float: left;
   }
 
-  /* .section-label h2 {
+  .wrapper {
+    grid-template-rows: 20% 80% 20%;
+  }
+
+  .section-label h2 {
       writing-mode: vertical-lr;
       text-orientation: upright;
-    } */
+      font-size: 20px;
+  }
 }
