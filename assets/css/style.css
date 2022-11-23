@@ -191,7 +191,7 @@ figure img {
   grid-gap: 0.5em;
   grid-template-areas:
     "main main alt"
-    "alt alt alt"
+    "alt alt alt";
 }
 
 .card {
@@ -202,6 +202,7 @@ figure img {
   align-items: center;
   position: relative;
   text-align: flex-end;
+  /* overflow: hidden; */
 }
 
 .card-main {
@@ -212,6 +213,20 @@ figure img {
   object-fit: cover;
   width: 100%;
   max-height: 100%;
+} */
+
+/* .card a {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+} */
+
+/* .card a img {
+  width: 0;
+  height: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: contain;
 } */
 
 .card-main a img {
@@ -280,8 +295,8 @@ a:hover {
   }
 
   .section-label h2 {
-      writing-mode: vertical-lr;
-      text-orientation: upright;
-      font-size: 20px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 20px;
   }
 }
