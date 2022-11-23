@@ -142,7 +142,7 @@ figure img {
 .wrapper {
   display: grid;
   grid-template-columns: 15% 83%;
-  grid-template-rows: 15% 80% 10%;
+  grid-template-rows: 15% 200% 10%;
   grid-gap: 1em;
   margin: 1em;
 }
@@ -185,6 +185,7 @@ figure img {
 /* || PORTFOLIO SECTION */
 
 .projects-section {
+
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(3, 1fr);
@@ -217,9 +218,13 @@ figure img {
   grid-area: 1 / 1 / span 1 / span 2;
 }
 
-.card-alt a img {
-  max-width: 100%;
-  height: auto;
+.card-alt {
+  width: 0;
+  height: 0;
+  margin: 2px;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: contain;
 }
 
 .img-text {
