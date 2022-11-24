@@ -139,21 +139,21 @@ figure img {
 
 /* || GENERAL MAIN CONTENT */
 
-.wrapper {
+.main-content {
   display: grid;
   grid-template-columns: 15% 85%;
-  grid-template-rows: 30% 80% 30%;
+  grid-template-rows: 30% 120% 30%;
   grid-gap: 1em;
   margin: 1em;
 }
 
-.wrapper > div {
+.main-content > section {
   background: var(--light-background);
   padding: 1em;
   color: var(--white);
 }
 
-.wrapper > div:nth-child(odd) {
+.main-content > section:nth-child(odd) {
   background: var(--dark-background);
 }
 
@@ -208,6 +208,10 @@ figure img {
   overflow: hidden;
 }
 
+.card a {
+  opacity: 60%;
+}
+
 .card-main {
   width: 0;
   height: 0;
@@ -223,28 +227,7 @@ figure img {
   margin: 2px;
   min-width: 100%;
   min-height: 100%;
-  object-fit: contain;
 }
-
-/* .card-alt {
-  width: 0;
-  height: 0;
-  margin: 2px;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: contain;
-} */
-
-/* .card-main a img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-
-/* .card-alt a img {
-  max-width: 100%;
-  height: auto;
-} */
 
 .img-text {
   position: absolute;
@@ -257,7 +240,7 @@ figure img {
 }
 
 a:hover {
-  opacity: 75%;
+  opacity: 100%;
 }
 
 .zoom {
@@ -270,10 +253,15 @@ a:hover {
 
 /* || CONTACT SECTION */
 
+.contact-me-header {
+  margin-bottom: 2vh;
+}
+
 .contact-me-section {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 2vh;
 }
 
 .contact-me-section a img {
@@ -284,6 +272,7 @@ a:hover {
 /* || VIEWPORT RESIZING */
 
 @media screen and (max-width: 768px) {
+
   .long-name {
     display: none;
   }
@@ -296,13 +285,41 @@ a:hover {
     float: left;
   }
 
-  .wrapper {
-    grid-template-rows: 20% 80% 20%;
+  .main-content {
+    grid-template-rows: 20% 75% 30%;
   }
 
   .section-label h2 {
     writing-mode: vertical-lr;
     text-orientation: upright;
-    font-size: 20px;
+    font-size: 80%;
+  }
+
+  .contact-me-section a {
+    size: 80%;
+  }
+
+  .contact-me-section a img {
+    height: 5vh;
+    width: 5vh;
+  }
+}
+
+@media screen and (max-width: 620px) {
+
+  .about-me-section p {
+    font-size: 80%
+  }
+
+  .img-text h3,
+  .img-text p {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 495px) {
+
+  .main-content {
+    grid-template-rows: 30% 75% 30%;
   }
 }
