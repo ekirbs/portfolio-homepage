@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: var(--white);
 }
 
@@ -142,7 +142,7 @@ figure img {
 .main-content {
   display: grid;
   grid-template-columns: 15% 85%;
-  grid-template-rows: 30% 120% 30%;
+  grid-template-rows: 30% 120% 33%;
   grid-gap: 1em;
   margin: 1em;
 }
@@ -253,15 +253,10 @@ a:hover {
 
 /* || CONTACT SECTION */
 
-.contact-me-header {
-  margin-bottom: 2vh;
-}
-
 .contact-me-section {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 2vh;
 }
 
 .contact-me-section a img {
