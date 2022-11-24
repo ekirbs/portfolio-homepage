@@ -52,7 +52,3 @@ Special Thanks to Sam Lerner for inspiration.
 ## License
 
 Please refer to the license in the repo.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
