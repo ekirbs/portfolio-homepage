@@ -262,6 +262,7 @@ a:hover {
 .contact-me-section a img {
   height: 8vh;
   width: 8vh;
+  border-radius: 10%;
 }
 
 /* || VIEWPORT RESIZING */
