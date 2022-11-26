@@ -142,7 +142,7 @@ figure img {
 .main-content {
   display: grid;
   grid-template-columns: 15% 85%;
-  grid-template-rows: 30% 180% 33%;
+  grid-template-rows: 30% 150% 33%;
   grid-gap: 1em;
   margin: 1em;
 }
@@ -282,7 +282,7 @@ a:hover {
   }
 
   .main-content {
-    grid-template-rows: 20% 75% 30%;
+    grid-template-rows: 33% 75% 33%;
   }
 
   .section-label h2 {
@@ -299,7 +299,7 @@ a:hover {
     height: 5vh;
     width: 5vh;
   }
-}
+};
 
 @media screen and (max-width: 620px) {
 
@@ -311,11 +311,11 @@ a:hover {
   .img-text p {
     font-size: 80%;
   }
-}
+};
 
-@media screen and (max-width: 495px) {
+@media screen and (max-width: 345px) {
 
   .main-content {
-    grid-template-rows: 30% 75% 30%;
+    grid-template-rows: 40% 75% 33%;
   }
-}
+};
